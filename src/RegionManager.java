@@ -3,8 +3,19 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Region Manager Class implements from Region Manager Interface
+ */
 public class RegionManager implements RegionManagerInterface {
+    /**
+     * Region Array List contains data of all regions
+     */
     protected final ArrayList<Region> regionArrayList = new ArrayList<>();
+
+    /**
+     * Region Manager Construction
+     * @throws FileNotFoundException if the file is not found
+     */
     public RegionManager() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File("COVID19_10-Region.csv"));
         //scan header
