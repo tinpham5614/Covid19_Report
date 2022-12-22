@@ -10,7 +10,7 @@ public class RegionViewer extends JFrame{
 
     public RegionViewer() throws FileNotFoundException {
         //JFrame
-        setTitle("Book");
+        setTitle("COVID 19 - REPORT");
         setSize(700, 700);
         setResizable(false);
         Dimension screenSize = getToolkit().getScreenSize();
