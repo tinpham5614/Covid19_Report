@@ -4,10 +4,17 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 
+/**
+ * Region Viewer Class extends from JFrame
+ */
 public class RegionViewer extends JFrame{
     private final RegionManager regionManager = new RegionManager();
     private int count = 0;
 
+    /**
+     * Region viewer construction
+     * @throws FileNotFoundException if the file is not found
+     */
     public RegionViewer() throws FileNotFoundException {
         //JFrame
         setTitle("COVID 19 - REPORT");

@@ -26,14 +26,27 @@ public class RegionManager implements RegionManagerInterface {
         }
         scanner.close();
     }
+
+    /**
+     * @return number of region in the file
+     */
     @Override
     public int getRegionCount(){
         return regionArrayList.size();
     }
+
+    /**
+     * @return region array list contains data
+     */
     @Override
     public ArrayList<Region> getRegionArrayList() {
         return regionArrayList;
     }
+
+    /**
+     * @param index given index of region array list
+     * @return specific region and its data
+     */
     @Override
     public ArrayList<Region> getRegionWithIndex(int index){
         ArrayList<Region> newRegionList = new ArrayList<>();
@@ -44,6 +57,11 @@ public class RegionManager implements RegionManagerInterface {
         }
         return newRegionList;
     }
+
+    /**
+     * @param index given index of region array list
+     * @return a new array list without specific index region
+     */
     @Override
     public ArrayList<Region> removeRegionWithIndex(int index){
         ArrayList<Region> newRegionList = new ArrayList<>();
