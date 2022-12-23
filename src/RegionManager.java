@@ -13,7 +13,7 @@ public class RegionManager implements RegionManagerInterface {
     protected final ArrayList<Region> regionArrayList = new ArrayList<>();
 
     /**
-     * Region Manager Construction
+     * Region Manager Constructor
      * @throws FileNotFoundException if the file is not found
      */
     public RegionManager() throws FileNotFoundException {

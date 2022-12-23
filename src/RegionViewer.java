@@ -12,7 +12,7 @@ public class RegionViewer extends JFrame{
     private int count = 0;
 
     /**
-     * Region viewer construction
+     * Region viewer Constructor
      * @throws FileNotFoundException if the file is not found
      */
     public RegionViewer() throws FileNotFoundException {
