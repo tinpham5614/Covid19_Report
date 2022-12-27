@@ -59,28 +59,17 @@ public class RegionManager implements RegionManagerInterface {
      * @return specific region and its data
      */
     @Override
-    public ArrayList<Region> getRegionWithIndex(int index){
-        ArrayList<Region> newRegionList = new ArrayList<>();
-        for (int i = 0; i < regionArrayList.size(); i++) {
-            if (i == index){
-                newRegionList.add(regionArrayList.get(i));
-            }
-        }
-        return newRegionList;
+    public Region getRegionWithIndex(int index){
+        return regionArrayList.get(index);
     }
 
     /**
      * @param index given index of region array list
-     * @return a new array list without specific index region
+     * @return an array list without specific index region
      */
     @Override
     public ArrayList<Region> removeRegionWithIndex(int index){
-        ArrayList<Region> newRegionList = new ArrayList<>();
-        for (int i = 0; i < regionArrayList.size(); i++) {
-            if (i != index){
-                newRegionList.add(regionArrayList.get(i));
-            }
-        }
-        return newRegionList;
+        regionArrayList.remove(regionArrayList.get(index));
+        return regionArrayList;
     }
 }

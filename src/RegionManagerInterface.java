@@ -15,7 +15,7 @@ public interface RegionManagerInterface {
      * @param index given index of region array list
      * @return specific region and its data
      */
-    ArrayList<Region> getRegionWithIndex(int index);
+    Region getRegionWithIndex(int index);
 
     /**
      * @param index given index of region array list
